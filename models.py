@@ -10,7 +10,7 @@ url = URL.create(
     drivername="postgresql",
     username=os.getenv("DB_USER"),
     password=os.getenv("DB_PASSWORD"),
-    host="localhost",
+    host=os.getenv("DB_HOST"),
     database=os.getenv("DB_DATABASE"),
     port=5432
 )
